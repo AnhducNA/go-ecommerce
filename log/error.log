@@ -1,0 +1,2 @@
+2025-03-26T19:07:15.546+0700	INFO	cli/main.log.go:17	Info log	{"line": 12}
+2025-03-26T19:07:15.546+0700	ERROR	cli/main.log.go:18	Error log	{"line": 15}
