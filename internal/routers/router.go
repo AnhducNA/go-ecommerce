@@ -7,7 +7,6 @@ import (
 
 func NewRouter() *gin.Engine {
 	router := gin.Default()
-
 	v1 := router.Group("/v1")
 	{
 		v1.GET("/ping", controller.NewUserController().GetUserByEmal)
