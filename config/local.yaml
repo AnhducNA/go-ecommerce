@@ -19,3 +19,10 @@ rabbitMQ:
   user: admin
 kafka:
   user: admin
+logger:
+  log_level: debug
+  file_log_name: "./storages/logs/dev.xxx.log"
+  max_size: 500
+  max_backups: 3
+  max_age: 28
+  compress: true
