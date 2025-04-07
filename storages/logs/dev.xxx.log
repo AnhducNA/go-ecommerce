@@ -1,2 +1,54 @@
 2025-04-07T22:19:01.302+0700	INFO	initialize/run.go:16	Info log 	{"OK": "success"}
 2025-04-07T22:35:31.981+0700	INFO	initialize/run.go:16	Info log 	{"OK": "success"}
+2025-04-07T23:05:19.540+0700	INFO	initialize/run.go:16	Info log 	{"OK": "success"}
+2025-04-08T00:48:58.666+0700	INFO	initialize/run.go:16	Info log 	{"OK": "success"}
+2025-04-08T00:49:45.923+0700	ERROR	initialize/mysql.go:16	InitMysql error	{"error": "default addr for network 'localhost:3306' unknown"}
+github.com/AnhducNA/go-ecommerce/internal/initialize.checkErrPanic
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/mysql.go:16
+github.com/AnhducNA/go-ecommerce/internal/initialize.InitMysql
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/mysql.go:29
+github.com/AnhducNA/go-ecommerce/internal/initialize.Run
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/run.go:15
+main.main
+	C:/Users/admin/Documents/workspace/go-ecommerce/cmd/server/main.go:8
+runtime.main
+	C:/Users/admin/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.22.2.windows-amd64/src/runtime/proc.go:271
+2025-04-08T00:50:29.285+0700	ERROR	initialize/mysql.go:16	InitMysql error	{"error": "default addr for network '127.0.0.1:3306' unknown"}
+github.com/AnhducNA/go-ecommerce/internal/initialize.checkErrPanic
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/mysql.go:16
+github.com/AnhducNA/go-ecommerce/internal/initialize.InitMysql
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/mysql.go:29
+github.com/AnhducNA/go-ecommerce/internal/initialize.Run
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/run.go:15
+main.main
+	C:/Users/admin/Documents/workspace/go-ecommerce/cmd/server/main.go:8
+runtime.main
+	C:/Users/admin/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.22.2.windows-amd64/src/runtime/proc.go:271
+2025-04-08T00:51:21.559+0700	ERROR	initialize/mysql.go:16	InitMysql error	{"error": "default addr for network '127.0.0.1:3306' unknown"}
+github.com/AnhducNA/go-ecommerce/internal/initialize.checkErrPanic
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/mysql.go:16
+github.com/AnhducNA/go-ecommerce/internal/initialize.InitMysql
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/mysql.go:29
+github.com/AnhducNA/go-ecommerce/internal/initialize.Run
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/run.go:15
+main.main
+	C:/Users/admin/Documents/workspace/go-ecommerce/cmd/server/main.go:8
+runtime.main
+	C:/Users/admin/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.22.2.windows-amd64/src/runtime/proc.go:271
+2025-04-08T00:51:53.441+0700	ERROR	initialize/mysql.go:16	InitMysql error	{"error": "default addr for network '127.0.0.1:3306' unknown"}
+github.com/AnhducNA/go-ecommerce/internal/initialize.checkErrPanic
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/mysql.go:16
+github.com/AnhducNA/go-ecommerce/internal/initialize.InitMysql
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/mysql.go:30
+github.com/AnhducNA/go-ecommerce/internal/initialize.Run
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/run.go:15
+main.main
+	C:/Users/admin/Documents/workspace/go-ecommerce/cmd/server/main.go:8
+runtime.main
+	C:/Users/admin/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.22.2.windows-amd64/src/runtime/proc.go:271
+2025-04-08T00:53:43.103+0700	INFO	initialize/mysql.go:32	InitMysql mysql connect success
+2025-04-08T00:53:43.220+0700	INFO	initialize/run.go:16	Info log 	{"OK": "success"}
+2025-04-08T01:29:04.173+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-08T01:29:04.390+0700	INFO	initialize/run.go:16	Info log 	{"OK": "success"}
+2025-04-08T01:29:52.286+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-08T01:29:52.413+0700	INFO	initialize/run.go:16	Info log 	{"OK": "success"}
