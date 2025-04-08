@@ -96,3 +96,25 @@ main.main
 runtime.main
 	/usr/lib/go-1.22/src/runtime/proc.go:271
 2025-04-08T17:56:20.513+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
+2025-04-08T18:33:56.635+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-08T18:33:56.789+0700	ERROR	initialize/redis.go:27	InitRedis error	{"error": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+github.com/AnhducNA/go-ecommerce/internal/initialize.InitRedis
+	/home/duc/workspace/github.com/AnhducNA/go-ecommerce/internal/initialize/redis.go:27
+github.com/AnhducNA/go-ecommerce/internal/initialize.Run
+	/home/duc/workspace/github.com/AnhducNA/go-ecommerce/internal/initialize/run.go:16
+main.main
+	/home/duc/workspace/github.com/AnhducNA/go-ecommerce/cmd/server/main.go:8
+runtime.main
+	/usr/lib/go-1.22/src/runtime/proc.go:271
+2025-04-08T18:33:56.972+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
+2025-04-08T18:34:27.888+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-08T18:34:28.037+0700	ERROR	initialize/redis.go:27	InitRedis error	{"error": "dial tcp 127.0.0.1:6379: connect: connection refused"}
+github.com/AnhducNA/go-ecommerce/internal/initialize.InitRedis
+	/home/duc/workspace/github.com/AnhducNA/go-ecommerce/internal/initialize/redis.go:27
+github.com/AnhducNA/go-ecommerce/internal/initialize.Run
+	/home/duc/workspace/github.com/AnhducNA/go-ecommerce/internal/initialize/run.go:16
+main.main
+	/home/duc/workspace/github.com/AnhducNA/go-ecommerce/cmd/server/main.go:8
+runtime.main
+	/usr/lib/go-1.22/src/runtime/proc.go:271
+2025-04-08T18:34:28.219+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
