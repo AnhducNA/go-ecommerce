@@ -1,30 +1,27 @@
 package controller
 
 import (
-	"fmt"
-
 	"github.com/AnhducNA/go-ecommerce/internal/service"
 	"github.com/AnhducNA/go-ecommerce/pkg/response"
 	"github.com/gin-gonic/gin"
 )
 
 type UserController struct {
-	userService *service.UserService
+	userService service.IUserService
 }
 
-func NewUserController() *UserController {
+func NewUserController(userService service.IUserService) *UserController {
 	return &UserController{
-		userService: service.NewUserService(),
+		userService: userService,
 	}
 }
 
-// controller => service => repository => model => db
 func (userCtrl *UserController) GetUserByEmal(context *gin.Context) {
-	fmt.Println("Get user by email")
-	err, userInfo := userCtrl.userService.GetUserByEmail(context.Query("email"))
-	if err != nil {
-		response.ErrorResponse(context, 4000, "User not found")
-	}
-	response.SuccessResponse(context, 2000, userInfo)
+	result := userCtrl.userService.Register(context.Query("email"), context.Query("purpose"))
+	response.SuccessResponse(context, result, nil)
+}
 
+func (userCtrl *UserController) Register(c *gin.Context) {
+	result := userCtrl.userService.Register(c.Query("email"), c.Query("purpose"))
+	response.SuccessResponse(c, result, nil)
 }

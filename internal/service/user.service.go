@@ -1,19 +1,28 @@
 package service
 
-import "github.com/AnhducNA/go-ecommerce/internal/repo"
+import (
+	"github.com/AnhducNA/go-ecommerce/internal/repo"
+	"github.com/AnhducNA/go-ecommerce/pkg/response"
+)
 
-type UserService struct {
-	userRepo *repo.UserRepo
+// INTERFACE VERSION
+
+type IUserService interface {
+	Register(email string, purpose string) int
 }
 
-func NewUserService() *UserService {
-	return &UserService{}
+type userService struct {
+	userRepo repo.IUserRepository
 }
 
-func (userService *UserService) GetUserByEmail(email string) (error, string) {
-	err, user := userService.userRepo.GetUserByEmail(email)
-	if err != nil {
-		return err, ""
+func NewUserServie(userRepo repo.IUserRepository) IUserService {
+	return &userService{userRepo: userRepo}
+}
+
+// Register implements IUserService.
+func (us *userService) Register(email string, purpose string) int {
+	if us.userRepo.GetUserByEmail(email) {
+		return response.ErrorCodeUserHasExists
 	}
-	return nil, user
+	return response.Success
 }
