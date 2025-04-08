@@ -13,6 +13,7 @@ func Run() {
 	fmt.Println("Server database url: ", sql.Url)
 	InitLogger()
 	InitMysql()
+	InitRedis()
 	global.Logger.Info("Info log ", zap.String("OK", "success"))
 	router := InitRouter()
 	router.Run(":5000")
