@@ -2,3 +2,13 @@
 2025-04-09T19:11:01.310+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
 2025-04-09T19:13:57.428+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
 2025-04-09T19:13:57.508+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
+2025-04-09T19:36:16.530+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-09T19:36:16.611+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
+2025-04-09T19:39:18.742+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-09T19:39:18.743+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
+2025-04-09T19:49:02.483+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-09T19:49:02.485+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
+2025-04-09T19:57:25.756+0700	INFO	initialize/mysql.go:31	InitMysql mysql connect success
+2025-04-09T19:57:25.758+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
+2025-04-09T19:58:42.865+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-09T19:58:42.867+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
