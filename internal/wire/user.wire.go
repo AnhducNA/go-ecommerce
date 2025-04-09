@@ -11,7 +11,7 @@ import (
 func InitUserRouterHandler() (*controller.UserController, error) {
 	wire.Build(
 		repo.NewUserRepository,
-		service.NewUserServie,
+		service.NewUserService,
 		controller.NewUserController,
 	)
 	return new(controller.UserController), nil

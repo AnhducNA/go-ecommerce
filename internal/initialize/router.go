@@ -8,8 +8,8 @@ import (
 )
 
 func InitRouter() *gin.Engine {
-	router := gin.Default()
-	router.Use(middlewares.AuthMiddleware())
+	var router *gin.Engine
+
 	if global.Config.Server.Mode == "dev" {
 		gin.SetMode(gin.DebugMode)
 		gin.ForceConsoleColor()
@@ -17,13 +17,20 @@ func InitRouter() *gin.Engine {
 	} else {
 		gin.SetMode(gin.ReleaseMode)
 		router = gin.New()
+		router.Use(gin.Recovery())
+		router.Use(gin.Logger())
 	}
+
+	router.Use(middlewares.AuthMiddleware())
+
 	manageRouter := routers.RouterGroupApp.Manage
 	userRouter := routers.RouterGroupApp.User
 
 	MainGroup := router.Group("api/v1")
 	{
-		MainGroup.GET("checkStatus") // tracking monitor
+		MainGroup.GET("checkStatus", func(c *gin.Context) {
+			c.JSON(200, gin.H{"status": "ok"})
+		})
 	}
 	{
 		userRouter.InitUserRouter(MainGroup)
