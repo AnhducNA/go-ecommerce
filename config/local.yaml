@@ -1,8 +1,10 @@
 server:
   port: 5000
   mode: "prod"
+
 mysql:
   url: root:password@tcp(127.0.0.1:3306)/ecommerce
+  # url: root:password@tcp(mysql-container:3306)/ecommerce
   maxIdleConns: 10
   maxOpenConns: 100
   connMaxLifetime: 60
@@ -13,6 +15,7 @@ security:
   jwt:
     key: secret
 redis:
+  # host: redis-container
   host: 127.0.0.1
   port: 6379
   password:

@@ -16,5 +16,5 @@ func Run() {
 	InitRedis()
 	global.Logger.Info("Info log ", zap.String("OK", "success"))
 	router := InitRouter()
-	router.Run(":5000")
+	router.Run(fmt.Sprintf(":%d", global.Config.Server.Port))
 }
