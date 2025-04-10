@@ -8,6 +8,7 @@ import (
 	"github.com/AnhducNA/go-ecommerce/internal/po"
 	"go.uber.org/zap"
 	"gorm.io/driver/mysql"
+	"gorm.io/gen"
 	"gorm.io/gorm"
 )
 
@@ -21,11 +22,9 @@ func checkErrPanic(err error, msg string) {
 func InitMysql() {
 	m := global.Config.MySQL
 	// refer https://github.com/go-sql-driver/mysql#dsn-data-source-name for details
-	dsn := "%s?charset=utf8mb4&parseTime=True&loc=Local"
-	var str = fmt.Sprintf(dsn, m.Url)
-	db, err := gorm.Open(mysql.Open(str), &gorm.Config{
+	var dsn = fmt.Sprintf("%s?charset=utf8mb4", m.Url)
+	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{
 		SkipDefaultTransaction: false,
-		PrepareStmt:            true,
 	})
 	checkErrPanic(err, "InitMysql error")
 	global.Logger.Info("InitMysql mysql connect success")
@@ -50,24 +49,23 @@ func SetPool() {
 }
 
 func getTableDAO() {
-	// g := gen.NewGenerator(gen.Config{
-	// 	OutPath:      "./internal/models",
-	// 	Mode:         gen.WithoutContext | gen.WithDefaultQuery | gen.WithQueryInterface, // generate mode
-	// 	ModelPkgPath: "github.com/AnhducNA/go-ecommerce/internal/models",
-	// })
+	g := gen.NewGenerator(gen.Config{
+		OutPath: "./internal/models",
+		Mode:    gen.WithoutContext | gen.WithDefaultQuery | gen.WithQueryInterface, // generate mode
+	})
 
-	// // gormdb, _ := gorm.Open(mysql.Open("root:@(127.0.0.1:3306)/demo?charset=utf8mb4&parseTime=True&loc=Local"))
-	// g.UseDB(global.Mdb) // reuse your gorm db
+	// gormdb, _ := gorm.Open(mysql.Open("root:@(127.0.0.1:3306)/demo?charset=utf8mb4&parseTime=True&loc=Local"))
+	g.UseDB(global.Mdb) // reuse your gorm db
 
-	// g.GenerateModel("go_crm_user")
-	// // Generate basic type-safe DAO API for struct `model.User` following conventions
-	// // g.ApplyBasic(model.User{})
+	g.GenerateModel("go_crm_user")
+	// Generate basic type-safe DAO API for struct `model.User` following conventions
+	// g.ApplyBasic(model.User{})
 
-	// // Generate Type Safe API with Dynamic SQL defined on Querier interface for `model.User` and `model.Company`
-	// // g.ApplyInterface(func(Querier) {}, model.User{}, model.Company{})
+	// Generate Type Safe API with Dynamic SQL defined on Querier interface for `model.User` and `model.Company`
+	// g.ApplyInterface(func(Querier) {}, model.User{}, model.Company{})
 
-	// // Generate the code
-	// g.Execute()
+	// Generate the code
+	g.Execute()
 }
 
 func migrateTables() {

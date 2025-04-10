@@ -14,5 +14,5 @@ type User struct {
 }
 
 func (user *User) TableName() string {
-	return "user"
+	return "go_crm_user"
 }
