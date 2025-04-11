@@ -29,3 +29,38 @@ runtime.main
 2025-04-10T19:38:28.738+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
 2025-04-10T19:39:36.865+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
 2025-04-10T19:39:36.898+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
+2025-04-11T09:55:11.787+0700	ERROR	initialize/mysql.go:17	InitMysql error	{"error": "dial tcp 127.0.0.1:3306: connect: connection refused"}
+github.com/AnhducNA/go-ecommerce/internal/initialize.checkErrPanic
+	/home/duc/workspace/github.com/AnhducNA/go-ecommerce/internal/initialize/mysql.go:17
+github.com/AnhducNA/go-ecommerce/internal/initialize.InitMysql
+	/home/duc/workspace/github.com/AnhducNA/go-ecommerce/internal/initialize/mysql.go:29
+github.com/AnhducNA/go-ecommerce/internal/initialize.Run
+	/home/duc/workspace/github.com/AnhducNA/go-ecommerce/internal/initialize/run.go:15
+main.main
+	/home/duc/workspace/github.com/AnhducNA/go-ecommerce/cmd/server/main.go:8
+runtime.main
+	/usr/local/go/src/runtime/proc.go:283
+2025-04-11T09:56:54.754+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-11T09:56:54.844+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
+2025-04-11T10:23:15.501+0700	ERROR	initialize/mysql.go:17	InitMysql error	{"error": "dial tcp: lookup mysql-container on 127.0.0.53:53: server misbehaving"}
+github.com/AnhducNA/go-ecommerce/internal/initialize.checkErrPanic
+	/home/duc/workspace/github.com/AnhducNA/go-ecommerce/internal/initialize/mysql.go:17
+github.com/AnhducNA/go-ecommerce/internal/initialize.InitMysql
+	/home/duc/workspace/github.com/AnhducNA/go-ecommerce/internal/initialize/mysql.go:29
+github.com/AnhducNA/go-ecommerce/internal/initialize.Run
+	/home/duc/workspace/github.com/AnhducNA/go-ecommerce/internal/initialize/run.go:15
+main.main
+	/home/duc/workspace/github.com/AnhducNA/go-ecommerce/cmd/server/main.go:8
+runtime.main
+	/usr/local/go/src/runtime/proc.go:283
+2025-04-11T17:48:31.173+0700	ERROR	initialize/mysql.go:17	InitMysql error	{"error": "dial tcp: lookup mysql-container on 127.0.0.53:53: server misbehaving"}
+github.com/AnhducNA/go-ecommerce/internal/initialize.checkErrPanic
+	/home/duc/workspace/github.com/AnhducNA/go-ecommerce/internal/initialize/mysql.go:17
+github.com/AnhducNA/go-ecommerce/internal/initialize.InitMysql
+	/home/duc/workspace/github.com/AnhducNA/go-ecommerce/internal/initialize/mysql.go:29
+github.com/AnhducNA/go-ecommerce/internal/initialize.Run
+	/home/duc/workspace/github.com/AnhducNA/go-ecommerce/internal/initialize/run.go:15
+main.main
+	/home/duc/workspace/github.com/AnhducNA/go-ecommerce/cmd/server/main.go:8
+runtime.main
+	/usr/local/go/src/runtime/proc.go:283

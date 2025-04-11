@@ -1,12 +1,13 @@
 services:
-mysql:
-  image: mysql:9.2.0
-  container_name: mysql-container
-  environment:
-    MYSQL_ROOT_PASSWORD: password
-    MYSQL_DATABASE: ecommerce
-    MYSQL_USER: root
-    MYSQL_PASSWORD: password
+  mysql:
+    # image: mysql:9.2.0
+    image: mysql:latest
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: ecommerce
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
     ports:
       - "3306:3306"
     volumes:
@@ -14,12 +15,23 @@ mysql:
       - ./init:/docker-entrypoint-initdb.d
   redis:
     image: redis:latest
+    # image: redis:7.4.2
     container_name: redis-container
     ports:
       - "6379:6379"
     volumes:
       - redis_data:/data
-
+  crm.shopdev.com:
+    container_name: crm.shopdev.com-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - mysql
+      - redis
+    ports:
+      - "5000:5000"
 volumes:
   mysql_data:
   redis_data:
