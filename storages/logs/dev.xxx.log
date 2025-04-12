@@ -64,3 +64,50 @@ main.main
 	/home/duc/workspace/github.com/AnhducNA/go-ecommerce/cmd/server/main.go:8
 runtime.main
 	/usr/local/go/src/runtime/proc.go:283
+2025-04-12T15:50:01.332+0700	ERROR	initialize/mysql.go:17	InitMysql error	{"error": "dial tcp: lookup mysql-container: no such host"}
+github.com/AnhducNA/go-ecommerce/internal/initialize.checkErrPanic
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/mysql.go:17
+github.com/AnhducNA/go-ecommerce/internal/initialize.InitMysql
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/mysql.go:29
+github.com/AnhducNA/go-ecommerce/internal/initialize.Run
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/run.go:15
+main.main
+	C:/Users/admin/Documents/workspace/go-ecommerce/cmd/server/main.go:8
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:283
+2025-04-12T21:07:48.834+0700	ERROR	initialize/mysql.go:17	InitMysql error	{"error": "dial tcp: lookup mysql-container: no such host"}
+github.com/AnhducNA/go-ecommerce/internal/initialize.checkErrPanic
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/mysql.go:17
+github.com/AnhducNA/go-ecommerce/internal/initialize.InitMysql
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/mysql.go:29
+github.com/AnhducNA/go-ecommerce/internal/initialize.Run
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/run.go:15
+main.main
+	C:/Users/admin/Documents/workspace/go-ecommerce/cmd/server/main.go:8
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:283
+2025-04-12T21:08:40.218+0700	ERROR	initialize/mysql.go:17	InitMysql error	{"error": "Error 1049 (42000): Unknown database 'ecommerce'"}
+github.com/AnhducNA/go-ecommerce/internal/initialize.checkErrPanic
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/mysql.go:17
+github.com/AnhducNA/go-ecommerce/internal/initialize.InitMysql
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/mysql.go:29
+github.com/AnhducNA/go-ecommerce/internal/initialize.Run
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/run.go:15
+main.main
+	C:/Users/admin/Documents/workspace/go-ecommerce/cmd/server/main.go:8
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:283
+2025-04-12T21:09:39.373+0700	ERROR	initialize/mysql.go:17	InitMysql error	{"error": "Error 1049 (42000): Unknown database 'ecommerce'"}
+github.com/AnhducNA/go-ecommerce/internal/initialize.checkErrPanic
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/mysql.go:17
+github.com/AnhducNA/go-ecommerce/internal/initialize.InitMysql
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/mysql.go:29
+github.com/AnhducNA/go-ecommerce/internal/initialize.Run
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/initialize/run.go:15
+main.main
+	C:/Users/admin/Documents/workspace/go-ecommerce/cmd/server/main.go:8
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:283
+2025-04-12T21:11:52.215+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-12T21:12:31.727+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-12T21:12:32.369+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}

@@ -3,14 +3,14 @@ server:
   mode: "prod"
 
 mysql:
-  # url: root:password@tcp(127.0.0.1:3306)/ecommerce
-  url: root:password@tcp(mysql-container:3306)/ecommerce
+  url: root:password@tcp(127.0.0.1:3306)/ecommerce
+  # url: root:password@tcp(mysql-container:3306)/ecommerce
   maxIdleConns: 10
   maxOpenConns: 100
   connMaxLifetime: 60
 database:
-  - url: mysql://root:password@localhost:3306/ecommerce
-  - url: mysql://duc:password@localhost:3306/order
+  # - url: mysql://root:password@localhost:3306/ecommerce
+  # - url: mysql://duc:password@localhost:3306/order
 security:
   jwt:
     key: secret
