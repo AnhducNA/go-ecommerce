@@ -2,6 +2,7 @@ package controller
 
 import (
 	"github.com/AnhducNA/go-ecommerce/internal/service"
+	"github.com/AnhducNA/go-ecommerce/internal/vo"
 	"github.com/AnhducNA/go-ecommerce/pkg/response"
 	"github.com/gin-gonic/gin"
 )
@@ -21,7 +22,19 @@ func (userCtrl *UserController) GetUserByEmal(context *gin.Context) {
 	response.SuccessResponse(context, result, nil)
 }
 
-func (userCtrl *UserController) Register(c *gin.Context) {
-	result := userCtrl.userService.Register(c.Query("email"), c.Query("purpose"))
-	response.SuccessResponse(c, result, nil)
+func (userCtrl *UserController) Register(ctx *gin.Context) {
+	var params vo.UserRegistratorRequest
+	if err := ctx.ShouldBindJSON(&params); err != nil {
+		response.ErrorResponse(
+			ctx,
+			response.ErrorParamInvalid,
+			err.Error(),
+		)
+		return
+	}
+	result := userCtrl.userService.Register(
+		params.Email,
+		params.Purpose,
+	)
+	response.SuccessResponse(ctx, result, nil)
 }

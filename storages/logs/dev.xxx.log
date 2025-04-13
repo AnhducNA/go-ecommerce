@@ -111,3 +111,453 @@ runtime.main
 2025-04-12T21:11:52.215+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
 2025-04-12T21:12:31.727+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
 2025-04-12T21:12:32.369+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
+2025-04-12T23:13:37.166+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-12T23:13:37.391+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
+2025-04-12T23:14:28.302+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-12T23:14:28.455+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
+2025-04-12T23:16:34.697+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-12T23:16:34.903+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
+2025-04-12T23:19:44.584+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-12T23:19:44.745+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
+2025-04-13T10:57:08.797+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T10:57:09.067+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
+2025-04-13T11:03:16.765+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T11:03:16.994+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
+2025-04-13T13:20:59.661+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T13:20:59.916+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
+2025-04-13T14:42:39.644+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T14:42:39.839+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
+2025-04-13T14:44:14.507+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T14:44:16.500+0700	INFO	initialize/run.go:17	Info log 	{"OK": "success"}
+2025-04-13T14:46:03.296+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T14:48:28.158+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T14:49:36.863+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T14:51:35.269+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T14:53:16.303+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T14:53:31.369+0700	ERROR	sendto/sendto.go:57	SendTextEmailOTP error::	{"error": "534 5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor d9443c01a7336-22ac7b8ae95sm78358125ad.61 - gsmtp"}
+github.com/AnhducNA/go-ecommerce/internal/utils/sendto.SendTextEmailOTP
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/utils/sendto/sendto.go:57
+github.com/AnhducNA/go-ecommerce/internal/service.(*userService).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/service/user.service.go:51
+github.com/AnhducNA/go-ecommerce/internal/controller.(*UserController).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/controller/user.controller.go:38
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:3301
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:2102
+2025-04-13T14:56:12.874+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T14:59:08.786+0700	ERROR	sendto/sendto.go:57	SendTextEmailOTP error::	{"error": "534 5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 98e67ed59e1d1-306df08f646sm8857712a91.22 - gsmtp"}
+github.com/AnhducNA/go-ecommerce/internal/utils/sendto.SendTextEmailOTP
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/utils/sendto/sendto.go:57
+github.com/AnhducNA/go-ecommerce/internal/service.(*userService).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/service/user.service.go:51
+github.com/AnhducNA/go-ecommerce/internal/controller.(*UserController).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/controller/user.controller.go:38
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:3301
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:2102
+2025-04-13T14:59:50.540+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T15:00:00.897+0700	ERROR	sendto/sendto.go:57	SendTextEmailOTP error::	{"error": "534 5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor d2e1a72fcca58-73bd22f82f6sm4537791b3a.88 - gsmtp"}
+github.com/AnhducNA/go-ecommerce/internal/utils/sendto.SendTextEmailOTP
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/utils/sendto/sendto.go:57
+github.com/AnhducNA/go-ecommerce/internal/service.(*userService).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/service/user.service.go:51
+github.com/AnhducNA/go-ecommerce/internal/controller.(*UserController).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/controller/user.controller.go:38
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:3301
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:2102
+2025-04-13T15:02:08.618+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T15:02:21.190+0700	ERROR	sendto/sendto.go:57	SendTextEmailOTP error::	{"error": "534 5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor d2e1a72fcca58-73bd2198acdsm4702921b3a.13 - gsmtp"}
+github.com/AnhducNA/go-ecommerce/internal/utils/sendto.SendTextEmailOTP
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/utils/sendto/sendto.go:57
+github.com/AnhducNA/go-ecommerce/internal/service.(*userService).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/service/user.service.go:51
+github.com/AnhducNA/go-ecommerce/internal/controller.(*UserController).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/controller/user.controller.go:38
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:3301
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:2102
+2025-04-13T15:16:24.089+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T15:30:42.855+0700	ERROR	sendto/sendto.go:76	SendTextEmailOTP error::	{"error": "534 5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor d2e1a72fcca58-73bd2199d57sm4589483b3a.32 - gsmtp"}
+github.com/AnhducNA/go-ecommerce/internal/utils/sendto.SendTextEmailOTP
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/utils/sendto/sendto.go:76
+github.com/AnhducNA/go-ecommerce/internal/service.(*userService).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/service/user.service.go:51
+github.com/AnhducNA/go-ecommerce/internal/controller.(*UserController).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/controller/user.controller.go:38
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:3301
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:2102
+2025-04-13T15:38:36.138+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T15:38:47.885+0700	ERROR	sendto/sendto.go:76	SendTextEmailOTP error::	{"error": "555 5.5.2 Syntax error, cannot decode response. For more information, go to\n5.5.2  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.2 specifications. d9443c01a7336-22ac7b62bc7sm78647345ad.23 - gsmtp"}
+github.com/AnhducNA/go-ecommerce/internal/utils/sendto.SendTextEmailOTP
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/utils/sendto/sendto.go:76
+github.com/AnhducNA/go-ecommerce/internal/service.(*userService).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/service/user.service.go:51
+github.com/AnhducNA/go-ecommerce/internal/controller.(*UserController).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/controller/user.controller.go:38
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:3301
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:2102
+2025-04-13T15:43:48.642+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T15:44:02.210+0700	ERROR	sendto/sendto.go:85	SendTextEmailOTP error::	{"error": "555 5.5.2 Syntax error, cannot decode response. For more information, go to\n5.5.2  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.2 specifications. 98e67ed59e1d1-306dd10c447sm9077097a91.3 - gsmtp"}
+github.com/AnhducNA/go-ecommerce/internal/utils/sendto.SendTextEmailOTP
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/utils/sendto/sendto.go:85
+github.com/AnhducNA/go-ecommerce/internal/service.(*userService).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/service/user.service.go:51
+github.com/AnhducNA/go-ecommerce/internal/controller.(*UserController).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/controller/user.controller.go:38
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:3301
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:2102
+2025-04-13T15:45:59.807+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T15:46:10.510+0700	ERROR	sendto/sendto.go:85	SendTextEmailOTP error::	{"error": "555 5.5.2 Syntax error, cannot decode response. For more information, go to\n5.5.2  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.2 specifications. 98e67ed59e1d1-306df400a21sm8908098a91.42 - gsmtp"}
+github.com/AnhducNA/go-ecommerce/internal/utils/sendto.SendTextEmailOTP
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/utils/sendto/sendto.go:85
+github.com/AnhducNA/go-ecommerce/internal/service.(*userService).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/service/user.service.go:51
+github.com/AnhducNA/go-ecommerce/internal/controller.(*UserController).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/controller/user.controller.go:38
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:3301
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:2102
+2025-04-13T15:46:50.311+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T15:46:58.376+0700	ERROR	sendto/sendto.go:85	SendTextEmailOTP error::	{"error": "555 5.5.2 Syntax error, cannot decode response. For more information, go to\n5.5.2  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.2 specifications. d9443c01a7336-22ac7c9c684sm78941025ad.132 - gsmtp"}
+github.com/AnhducNA/go-ecommerce/internal/utils/sendto.SendTextEmailOTP
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/utils/sendto/sendto.go:85
+github.com/AnhducNA/go-ecommerce/internal/service.(*userService).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/service/user.service.go:51
+github.com/AnhducNA/go-ecommerce/internal/controller.(*UserController).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/controller/user.controller.go:38
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:3301
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:2102
+2025-04-13T15:50:33.265+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T15:50:45.612+0700	ERROR	sendto/sendto.go:88	SendTextEmailOTP error::	{"error": "555 5.5.2 Syntax error, cannot decode response. For more information, go to\n5.5.2  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.2 specifications. 98e67ed59e1d1-306df401abdsm8873491a91.43 - gsmtp"}
+github.com/AnhducNA/go-ecommerce/internal/utils/sendto.SendTextEmailOTP
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/utils/sendto/sendto.go:88
+github.com/AnhducNA/go-ecommerce/internal/service.(*userService).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/service/user.service.go:51
+github.com/AnhducNA/go-ecommerce/internal/controller.(*UserController).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/controller/user.controller.go:38
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:3301
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:2102
+2025-04-13T16:51:10.556+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T16:52:47.997+0700	ERROR	sendto/sendto.go:88	SendTextEmailOTP error::	{"error": "555 5.5.2 Syntax error, cannot decode response. For more information, go to\n5.5.2  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.2 specifications. d9443c01a7336-22ac7b65a56sm79953515ad.2 - gsmtp"}
+github.com/AnhducNA/go-ecommerce/internal/utils/sendto.SendTextEmailOTP
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/utils/sendto/sendto.go:88
+github.com/AnhducNA/go-ecommerce/internal/service.(*userService).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/service/user.service.go:51
+github.com/AnhducNA/go-ecommerce/internal/controller.(*UserController).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/controller/user.controller.go:38
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:3301
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:2102
+2025-04-13T16:59:22.867+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T16:59:37.503+0700	ERROR	sendto/sendto.go:89	SendTextEmailOTP error::	{"error": "555 5.5.2 Syntax error, cannot decode response. For more information, go to\n5.5.2  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.2 specifications. d9443c01a7336-22ac7cb531csm79764855ad.185 - gsmtp"}
+github.com/AnhducNA/go-ecommerce/internal/utils/sendto.SendTextEmailOTP
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/utils/sendto/sendto.go:89
+github.com/AnhducNA/go-ecommerce/internal/service.(*userService).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/service/user.service.go:51
+github.com/AnhducNA/go-ecommerce/internal/controller.(*UserController).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/controller/user.controller.go:38
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:3301
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:2102
+2025-04-13T17:05:40.242+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T17:05:50.128+0700	ERROR	sendto/sendto.go:96	SendTextEmailOTP error::	{"error": "dial tcp: lookup daiphatmanagement@gmail.com: getaddrinfow: A non-recoverable error occurred during a database lookup."}
+github.com/AnhducNA/go-ecommerce/internal/utils/sendto.SendTextEmailOTP
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/utils/sendto/sendto.go:96
+github.com/AnhducNA/go-ecommerce/internal/service.(*userService).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/service/user.service.go:51
+github.com/AnhducNA/go-ecommerce/internal/controller.(*UserController).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/controller/user.controller.go:38
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:3301
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:2102
+2025-04-13T17:25:59.007+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T17:27:08.926+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T17:29:42.425+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T17:29:48.907+0700	ERROR	sendto/sendto.go:96	SendTextEmailOTP error::	{"error": "555 5.5.2 Syntax error, cannot decode response. For more information, go to\n5.5.2  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.2 specifications. d2e1a72fcca58-73bd230f164sm4709178b3a.155 - gsmtp"}
+github.com/AnhducNA/go-ecommerce/internal/utils/sendto.SendTextEmailOTP
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/utils/sendto/sendto.go:96
+github.com/AnhducNA/go-ecommerce/internal/service.(*userService).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/service/user.service.go:51
+github.com/AnhducNA/go-ecommerce/internal/controller.(*UserController).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/controller/user.controller.go:38
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:3301
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:2102
+2025-04-13T17:30:45.104+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T17:30:51.226+0700	ERROR	sendto/sendto.go:97	SendTextEmailOTP error::	{"error": "555 5.5.2 Syntax error, cannot decode response. For more information, go to\n5.5.2  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.2 specifications. d2e1a72fcca58-73bd2333841sm4742335b3a.160 - gsmtp"}
+github.com/AnhducNA/go-ecommerce/internal/utils/sendto.SendTextEmailOTP
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/utils/sendto/sendto.go:97
+github.com/AnhducNA/go-ecommerce/internal/service.(*userService).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/service/user.service.go:51
+github.com/AnhducNA/go-ecommerce/internal/controller.(*UserController).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/controller/user.controller.go:38
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:3301
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:2102
+2025-04-13T17:31:31.870+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T17:31:39.257+0700	ERROR	sendto/sendto.go:98	SendTextEmailOTP error::	{"error": "555 5.5.2 Syntax error, cannot decode response. For more information, go to\n5.5.2  https://support.google.com/a/answer/3221692 and review RFC 5321\n5.5.2 specifications. 98e67ed59e1d1-306dd187263sm9217953a91.42 - gsmtp"}
+github.com/AnhducNA/go-ecommerce/internal/utils/sendto.SendTextEmailOTP
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/utils/sendto/sendto.go:98
+github.com/AnhducNA/go-ecommerce/internal/service.(*userService).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/service/user.service.go:51
+github.com/AnhducNA/go-ecommerce/internal/controller.(*UserController).Register
+	C:/Users/admin/Documents/workspace/go-ecommerce/internal/controller/user.controller.go:38
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	C:/Users/admin/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
+net/http.serverHandler.ServeHTTP
+	C:/Program Files/Go/src/net/http/server.go:3301
+net/http.(*conn).serve
+	C:/Program Files/Go/src/net/http/server.go:2102
+2025-04-13T17:32:01.556+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T17:32:18.052+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T17:33:23.486+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T17:35:29.910+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T17:37:46.412+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T17:41:18.831+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T17:44:05.461+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-13T23:53:36.816+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-14T00:12:17.837+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success
+2025-04-14T00:28:10.607+0700	INFO	initialize/mysql.go:30	InitMysql mysql connect success

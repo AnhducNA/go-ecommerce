@@ -1,0 +1,9 @@
+@baseUrl=http://localhost:5000/api
+
+POST {{baseUrl}}/user/register
+Content-Type: application/json
+
+{
+    "email": "ducank961@gmail.com",
+    "purpose": "test"
+}

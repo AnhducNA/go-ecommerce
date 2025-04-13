@@ -2,7 +2,6 @@ package initialize
 
 import (
 	"github.com/AnhducNA/go-ecommerce/global"
-	"github.com/AnhducNA/go-ecommerce/internal/middlewares"
 	"github.com/AnhducNA/go-ecommerce/internal/routers"
 	"github.com/gin-gonic/gin"
 )
@@ -21,12 +20,12 @@ func InitRouter() *gin.Engine {
 		router.Use(gin.Logger())
 	}
 
-	router.Use(middlewares.AuthMiddleware())
+	// router.Use(middlewares.AuthMiddleware())
 
 	manageRouter := routers.RouterGroupApp.Manage
 	userRouter := routers.RouterGroupApp.User
 
-	MainGroup := router.Group("api/v1")
+	MainGroup := router.Group("api")
 	{
 		MainGroup.GET("checkStatus", func(c *gin.Context) {
 			c.JSON(200, gin.H{"status": "ok"})
