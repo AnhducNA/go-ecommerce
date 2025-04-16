@@ -32,7 +32,7 @@ func InitMysql() {
 
 	// set Pool
 	SetPool()
-	// migrateTables()
+	migrateTables()
 	getTableDAO()
 
 }
